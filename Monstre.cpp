@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Monstre::Monstre() : nom("C++"), _Atk_Monstre(10), _PV_Monstre(18), _Mort_Monstre(false){
+Monstre::Monstre() : _nom("C++"), _Atk_Monstre(10), _PV_Monstre(27), _Mort_Monstre(false){
 
 }
 
@@ -16,15 +16,22 @@ void Monstre::AttaqueMonstre(){
 }
 
 void Monstre::AfficheMonstre(){
-    cout << "Uther" << endl;
-    cout << "Attaque = 7";
-    cout << "Points de vie = " << _PV_Monstre << endl;
-
-    if (_Attaque == true)
+    if( _Mort_Monstre == true)
     {
-        cout << "Ce monstre à déjà attaqué";
+        cout << "Ce monstre est mort"<< endl;
     }
 
+    else 
+    {
+        cout << _nom << endl;
+        cout << "Attaque = " << _Atk_Monstre << endl;
+        cout << "Points de vie = " << _PV_Monstre << endl;
+
+        if (_Attaque == true)
+        {
+            cout << "Ce monstre à déjà attaqué";
+        }
+    }
 }
 
 void Monstre::MortMonstre(){

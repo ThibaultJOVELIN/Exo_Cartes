@@ -3,7 +3,7 @@
 class Monstre{
 
     private:
-        std::string nom;
+        std::string _nom;
         int _PV_Monstre ;
         int _Atk_Monstre ;
         bool _Attaque = false;

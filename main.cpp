@@ -1,9 +1,10 @@
 #include "Monstre.cpp"
+#include "Mage.cpp"
 #include <iostream>
 
 int main(){
     
-    Monstre ("C++", 10, 18, false);
+    Monstre ("C++", 10, 27, false);
 
     Monstre AfficheMonstre();
     Monstre AttaqueMonstre();
