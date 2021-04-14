@@ -1,4 +1,5 @@
 #include "Mage.h"
+#include "Monstre.h"
 #include <iostream>
 #include <string>
 
@@ -29,8 +30,9 @@ void Mage::InvocationMonstre(){
     }
 
     else
+//-----------Invocations des créatures sur le terrain----------------------
     {
-
+    
     }
 
 }
